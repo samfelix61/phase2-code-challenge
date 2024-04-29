@@ -1,28 +1,28 @@
 
-import React from "react";
-import { Trash2 } from 'lucide-react';
+// import React from "react";
+// import { Trash2 } from 'lucide-react';
 
-function Transaction({ setOnDelete}) {
+// function Transaction({ setOnDelete}) {
 
-  function handleDelete(id)
+//   function handleDelete(id)
 
-    {
-      fetch(`http://localhost:8001/transactions/${id}`, {
-        method: "DELETE"
-      })
-      .then((data)=> data.json())
-      .then((res)=>{   
+//     {
+//       fetch(`http://localhost:8001/transactions/${id}`, {
+//         method: "DELETE"
+//       })
+//       .then((data)=> data.json())
+//       .then((res)=>{   
         
-        setOnDelete(id)
+//         setOnDelete(id)
 
-      })
-    }
+//       })
+//     }
 
-  return (
-    <tr>
-     <td><Trash2 style = {{color: "red"}} onClick = {()=> handleDelete(transaction.id)}/></td>      
-    </tr>
-  );
-}
+//   return (
+//     <tr>
+//      <td><Trash2 style = {{color: "red"}} onClick = {()=> handleDelete(transaction.id)}/></td>      
+//     </tr>
+//   );
+// }
 
-export default Transaction;
+// export default Transaction;
