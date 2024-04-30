@@ -2,7 +2,8 @@ import React from "react";
 import Transaction from "./Transaction";
 function TransactionsList({transactions}) {
   const list = transactions.map((item)=>{
-    return <Transaction key={item.id} date={item.date} description={item.description} category={item.category} amount={item.amount} delete={item.delete}/>;
+    return <Transaction key={item.id} date={item.date} description={item.description} 
+    category={item.category} amount={item.amount} action={item.delete} />;
   })
   return (
     <table className="ui celled striped padded table">
@@ -24,7 +25,7 @@ function TransactionsList({transactions}) {
             <h3 className="ui center aligned header">Action</h3>
           </th>
         </tr>
-        {/* render a list of <Transaction> omponcents here */}
+        {/* render a list of <Transaction> components here */}
         {list}
       </tbody>
     </table>

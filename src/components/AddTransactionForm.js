@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Transaction from "./Transaction";
-import DeleteTransaction from "./DeleteTransaction"
+
 
 function AddTransactionForm() {
   const [date, setDate] = useState("")
@@ -30,8 +30,10 @@ function AddTransactionForm() {
           <input value={description} onChange={(e) => setDescription(e.target.value)} type="text" name="description" placeholder="Description" />
           <input value={category} onChange={(e) => setCategory(e.target.value)} type="text" name="category" placeholder="Category" />
           <input value={amount} onChange={(e) => setAmount(e.target.value)} type="number" name="amount" placeholder="Amount" step="0.01" />
-          {/* <button onClick= {()=> setOnChange(!on)}> delete <button/> */}
+         
+          {/* <button onClick= {()=> OnChange(!on)}> delete </button>   */}
         </div>
+          
         <button className="ui button" type="submit">
           Add Transaction
         </button>

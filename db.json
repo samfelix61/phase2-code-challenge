@@ -109,8 +109,15 @@
       "date": "2024-04-19",
       "description": "sambody",
       "category": "go",
-      "amount": "245",
+      "amount": "20",
       "id": 16
+    },
+    {
+      "date": "2024-04-02",
+      "description": "trying ",
+      "category": "testing",
+      "amount": "50",
+      "id": 17
     }
   ]
 }
