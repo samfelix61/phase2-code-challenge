@@ -8,7 +8,7 @@ function AddTransactionForm() {
   const [category, setCategory] = useState("")
   const [amount, setAmount] = useState("")
   function handleSubmit(e) {
-    fetch("http://localhost:8001/transactions", {
+    fetch("https://phase2-code-challenge.onrender.com/transactions", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
