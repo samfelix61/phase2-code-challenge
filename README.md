@@ -132,4 +132,3 @@ Example Response:
 
 ```json
 {}
-```
